@@ -1,0 +1,6 @@
+--create table prostorija(
+--sifra int,
+--dimenzije varchar(30),
+--maksbroj int,
+--mjesto varchar(30)
+--);

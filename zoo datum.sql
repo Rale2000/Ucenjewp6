@@ -1,0 +1,6 @@
+--create table datum(
+--sifra int,
+--datumdolaska datetime,
+--datumrodenja datetime,
+--datumsmrti datetime
+--);

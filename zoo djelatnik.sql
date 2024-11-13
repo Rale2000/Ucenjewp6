@@ -1,0 +1,6 @@
+--create table djelatnik(
+--sifra int,
+--ime varchar(50),
+--prezime varchar(50),
+--iban varchar(50)
+--);
