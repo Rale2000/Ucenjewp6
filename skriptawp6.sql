@@ -1,21 +1,21 @@
 ﻿-- Ovo je SQL skripta
--- prebacujem se na master bazu
+-- prebacujem se na master bazi
 use master;
-go
--- brišem bazu ako postoji
+go -- dajemo mu vremena da se prebaci prije nego što ide dalje
+-- brišem postojeću bazu ako postoji
 drop database if exists edunovawp6;
 go
--- napravi novu bazu
+-- kreiram novu bazu
 create database edunovawp6;
 go
--- koristi novu bazu
+-- pozicioniram se na bazu
 use edunovawp6;
 go
-
+-- kreiram tablice
 create table smjerovi(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
-cijena decimal(18,2) null,
+cijena decimal(18,2) null, -- null se ne mora pisati
 izvodiseod datetime,
 vaucer bit
 );
@@ -27,6 +27,12 @@ velicinagrupe int not null,
 predavac varchar(50),
 smjer int not null references smjerovi(sifra)
 );
+
+-- razlika varchar i char
+-- varchar(10)
+-- 'Ana'
+-- char(10)
+-- 'Ana       '
 
 create table polaznici(
 sifra int not null primary key identity(1,1),
@@ -41,5 +47,13 @@ grupa int not null references grupe(sifra),
 polaznik int not null references polaznici(sifra)
 );
 
+-- 1
+insert into smjerovi (naziv,cijena,izvodiseod,vaucer)
+values ('Web programiranje',1225.48,'2024-11-06 17:00',1);
 
-
+insert into smjerovi(naziv,cijena,izvodiseod,vaucer)
+values
+-- 2
+('Java programiranje',null,null,null),
+-- 3
+('Seviseri',800,'2020-01-01',0);
