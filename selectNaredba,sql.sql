@@ -55,6 +55,39 @@ drop table nova;
 
 
 
+use knjiznica;
+
+
+select count(*) from autor;
+
+
+select top 10 * from autor ;
+
+
+insert into autor (sifra,ime,prezime,datumrodenja)
+values (4, 'Marko','Rados', '2000-05-21');
+
+
+select top 10 * from katalog;
+
+select top 10 a.ime, a.prezime, b.naslov.
+c.naziv
+from autor a inner join katalog b
+on a.sifra= b.autor
+inner join mjesto c
+on c.sifra= b.mjesto;
+
+
+select *
+from autor a right join katalog b
+on a.sifra= b.autor;
+
+
+
+
+
+
+
 
 
 
