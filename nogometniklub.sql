@@ -22,8 +22,8 @@ sifra int not null primary key identity(1,1),
 datum datetime,
 gosti int not null references klub(sifra),
 domaci int not null references klub(sifra),
-golovidomaci int not null references klub(sifra),
-golovigosti int not null references klub(sifra)
+golovidomaci varchar(10),
+golovigosti varchar(10)  
 );
 
 create table igrac(
@@ -37,10 +37,15 @@ klub int not null references klub(sifra)
 );
 
 insert into klub (naziv,osnovan,stadion)
-values ('FC Barcelona','1899-11-29','Camp Nou');
+values ('FC Barcelona','1899-11-29','Camp Nou'),
+('Real Madrid','1902-3-6','Santiago Bernabeu')
 
-insert into utakmica (datum,gosti,domaci,golovidomaci,golovigosti)
-values ('2024-10-26','FC Barcelona','Real Madrid',0,4)
+
+insert into utakmica (datum,domaci,gosti,golovigosti,golovidomaci)
+values ('2024-10-26',2,1,4,0),
+('2010-11-29',1,2,0,5);
+
 
 insert into igrac (ime,prezime,podrijetlo,pozicija,vrijednost,klub)
-values ('Lamine','Yamal','Marokanac','RW',150.00,'FC Barcelona');
+values ('Lamine','Yamal','Marokanac','RW',150.00,1),
+ ('Vinicius','Junior','Brazilac','LW',200.00,2);
