@@ -2,7 +2,7 @@
 
 using Ucenje;
 
-E02Z1.Izvedi();
+E03Z1.Izvedi();
 
 // komentar jedna linija
 
