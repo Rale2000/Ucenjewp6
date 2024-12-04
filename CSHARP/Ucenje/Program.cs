@@ -1,11 +1,8 @@
 ﻿
 
-
 using Ucenje;
 
-E01Ulazizlaz.Izvedi();
-
-
+E01UlazIzlaz.Izvedi();
 
 // komentar jedna linija
 
