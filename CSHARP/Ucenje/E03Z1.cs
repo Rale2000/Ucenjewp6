@@ -20,7 +20,12 @@ namespace Ucenje
 
             Console.WriteLine(i==7);
 
-            int k = 4, m = 6;
+            int k = 0, m = 1;
+
+            k = m++ + k; // k = 1  , m = 2
+
+            m += ++k; // k = 3 , m = 4
+
 
 
 
