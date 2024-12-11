@@ -2,7 +2,43 @@
 
 using Ucenje;
 
-E07Z2.Izvedi();
+E10Z2.Izvedi();
+
+//E10Z1.Izvedi();
+
+//E10foreachPetlja.Izvedi();
+
+//E09Z2.Izvedi();
+
+//E09Z1.Izvedi();
+
+//E09DoWhilePetlja.Izvedi();
+
+//E08WhilePetlja.Izvedi();
+
+//E07Z2.Izvedi();
+
+//E07Z1.Izvedi();
+
+//E07ForPetlja.Izvedi();
+
+//E04Z2.Izvedi();
+
+//E06Nizovi.Izvedi();
+
+//E05UvjetnoGrananjeSwitch.Izvedi();
+
+//E04Z1.Izvedi();
+
+//E04UvjetnoGrananjeIf.Izvedi();
+
+//E03Operatori.Izvedi();
+
+//E02Z1.Izvedi();
+
+//E02VarijableTipoviPodataka.Izvedi();
+
+//E01UlazIzlaz.Izvedi();
 
 // komentar jedna linija
 
