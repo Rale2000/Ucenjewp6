@@ -24,6 +24,8 @@ namespace Ucenje
 
             int[] niz = { 2, 5, 2, 1, 4, 1, 2, 1, 4, 2, 3 };
             Console.WriteLine(Tip4(niz));
+
+            
         }
 
 
@@ -53,6 +55,11 @@ namespace Ucenje
             return int.MaxValue;
         }
 
+        /// <summary>
+        /// Metoda će za primljeni niz cijelih brojeva vratiti sumu
+        /// </summary>
+        /// <param name="niz">Niz cijelih brojeva</param>
+        /// <returns></returns>
         private static int Tip4(int[] niz)
         {
             int suma = 0;
@@ -62,6 +69,12 @@ namespace Ucenje
             }
             return suma;
         }
+
+
+
+
+
+
 
     }
 }
