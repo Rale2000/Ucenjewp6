@@ -25,6 +25,8 @@ namespace Ucenje
             int[] niz = { 2, 5, 2, 1, 4, 1, 2, 1, 4, 2, 3 };
             Console.WriteLine(Tip4(niz));
 
+            Tip4(niz);
+
             
         }
 
@@ -71,7 +73,26 @@ namespace Ucenje
         }
 
 
+        public static int UcitajCijeliBroj(string poruka)
+        {
 
+            while (true)
+            {
+                Console.Write(poruka);
+                try
+                {
+                    return int.Parse(Console.ReadLine());
+                }
+                catch 
+                {
+                    Console.WriteLine("Problem kod učitanja broja!");
+                    
+                }
+            }
+
+
+           // return 0;
+        }
 
 
 
