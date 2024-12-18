@@ -1,40 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucenje
+﻿namespace Ucenje
 {
+
+    // Program od korisnika unosi dva cijela broja
+    // Program ispisuje u novim redovima
+    // 1. zbroj
+    // 2. razliku drugog i prvog
+    // 3. umnožak
+    // 4. zbroj kvadrata prvog i drugog broj
+    // 5. kvocijent prvog i drugog broja
     internal class E03Z1
     {
-
-
-        public static void Izvedi()
-        {
-
-
-            Console.WriteLine("E03Z1");
-
-            int i = 7;
-
-            Console.WriteLine(i==7);
-
-            int k = 0, m = 1;
-
-            k = m++ + k; // k = 1  , m = 2
-
-            m += ++k; // k = 3 , m = 4
-
-
-
-
-
-
-        }
-    
-    
-    
     }
-
 }

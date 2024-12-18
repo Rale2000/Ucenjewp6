@@ -6,32 +6,23 @@ using System.Threading.Tasks;
 
 namespace Ucenje
 {
+
+    // Program od korisnika unosi cijeli broj 
+    // Koristeći while petlju program ispisuje 
+    // zbroj svih parnih brojeva od 1 do unesenog broja (skupa s njim)
+    // unos 10 ispis 30
+    // unos 12 ispis 42
+
     internal class E09Z1
     {
+
         public static void Izvedi()
         {
+            //Console.WriteLine("Z1");
 
-            // Console.WriteLine("Z1");
-
-            Console.WriteLine("Unesi cijeli broj: ");
-
-            int t = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(t);
-
-            int i = 0, suma = 0;
-            while (i <= t)
-            {
-                //Console.WriteLine("u petlji sam, i={0}", i);
-                if(++i%2 == 0)
-                {
-                    suma += i;
-                }
-                
-                    
-            }
-            Console.WriteLine(suma);
-
+           
         }
+
+
     }
 }
