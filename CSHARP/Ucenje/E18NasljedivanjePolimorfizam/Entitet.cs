@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E18NasljedivanjePolimorfizam
 {
-    public class Entitet : Object // čitati https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-9.0#methods
+    // Apstrakna klasa je ona klasa koja ne može imati instancu
+    // služi tome da sadržava zajednička svojstva i metode te da ju netko nasljedi
+    public abstract class Entitet : Object // čitati https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-9.0#methods
     {
         public int Sifra { get; set; }
 
